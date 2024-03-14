@@ -1,17 +1,19 @@
 package org.example.planas;
 
 public class Quadrado {
-
     double lado;
-
-    double QuadradoArea(){
-        return lado * 2;
+    public Quadrado(double lado){
+        this.lado = lado;
     }
-    double QuadradoPerimetro(){
+
+    public double QuadradoArea(){
+        return lado * lado;
+    }
+    public double QuadradoPerimetro(){
         return lado * 4;
     }
-    String RetornaString(){
-        return "A área do quadrado é " + QuadradoArea() + "e a o perímetro é " + QuadradoPerimetro();
+    public String RetornaStringQuadrado(){
+        return "A área do quadrado é " + QuadradoArea() + " e a do perímetro é " + QuadradoPerimetro();
     }
 
 
