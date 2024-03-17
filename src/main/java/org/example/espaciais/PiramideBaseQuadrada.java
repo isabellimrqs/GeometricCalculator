@@ -13,16 +13,18 @@ public class PiramideBaseQuadrada {
     }
 
     public double PiramideArea(){
-        return ((2 * aresta * apotema) + (aresta * aresta));
+        double areaBase = aresta * aresta;
+        double areaLateral = 4 * (0.5 * aresta * apotema);
+        return areaBase + areaLateral;
     }
 
     public double PiramideVolume(){
-        return ((aresta * altura) / 3);
+        return (1.0/3.0) * aresta * aresta * altura;
     }
 
     public String RetornaStringPiramide(){
-        return "A área da pirâmide é " + PiramideArea() + " e o volume é " + PiramideVolume();
+        String areaFormatada = String.format("%.2f", PiramideArea());
+        String volumeFormatado = String.format("%.2f", PiramideVolume());
+        return "A área da pirâmide é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
-
-
 }
