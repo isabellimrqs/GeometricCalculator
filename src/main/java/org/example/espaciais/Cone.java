@@ -19,7 +19,9 @@ public class Cone {
     }
 
     public String RetornaStringCone(){
-        return "O volume do cone é " + ConeVolume() + " e a área superficial é " + ConeArea();
+        String areaFormatada = String.format("%.2f", ConeArea());
+        String volumeFormatado = String.format("%.2f", ConeVolume());
+        return "A área do cone é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
 
 

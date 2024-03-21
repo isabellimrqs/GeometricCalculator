@@ -17,7 +17,9 @@ public class Cubo {
     }
 
     public String RetornaStringCubo(){
-        return "O volume do cubo é " + CuboVolume() + " e a área superficial é " + CuboArea();
+        String areaFormatada = String.format("%.2f", CuboArea());
+        String volumeFormatado = String.format("%.2f", CuboVolume());
+        return "A área do cubo é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
 
 

@@ -17,8 +17,10 @@ public class Cilindro {
         return ((2 * Math.PI * raio * altura) + (2 * Math.PI * (raio * raio)));
     }
 
-    public String RetornaSringCilindro(){
-        return "O volume do cilindro é " + CilindroVolume() + " e a área superficial é " + CilindroArea();
+    public String RetornaStringCilindro(){
+        String areaFormatada = String.format("%.2f", CilindroArea());
+        String volumeFormatado = String.format("%.2f", CilindroVolume());
+        return "A área do cilindro é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
 
 }

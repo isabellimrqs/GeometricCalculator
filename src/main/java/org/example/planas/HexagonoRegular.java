@@ -17,7 +17,9 @@ public class HexagonoRegular {
     }
 
     public String RetornaStringHexagono(){
-        return "A área do hexagono regular é " + HexRegularArea() + " e o perímetro é " + HexRegularAPerimetro();
+        String areaFormatada = String.format("%.2f", HexRegularArea());
+        String volumeFormatado = String.format("%.2f", HexRegularAPerimetro());
+        return "A área do hexágono é " + areaFormatada + " e o perímetro é " + volumeFormatado;
     }
 
 

@@ -16,7 +16,9 @@ public class Retangulo {
         return (2 * base) + (2 * altura);
     }
     public String RetornaStringRetangulo(){
-        return "A área do retângulo é " + RetanguloArea() + " e a do perímetro é " + RetanguloPerimetro();
+        String areaFormatada = String.format("%.2f", RetanguloArea());
+        String volumeFormatado = String.format("%.2f", RetanguloPerimetro());
+        return "A área do retângulo é " + areaFormatada + " e o perímetro é " + volumeFormatado;
     }
 
 }

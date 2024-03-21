@@ -13,7 +13,9 @@ public class Quadrado {
         return lado * 4;
     }
     public String RetornaStringQuadrado(){
-        return "A área do quadrado é " + QuadradoArea() + " e a do perímetro é " + QuadradoPerimetro();
+        String areaFormatada = String.format("%.2f", QuadradoArea());
+        String volumeFormatado = String.format("%.2f", QuadradoPerimetro());
+        return "A área do quadrado é " + areaFormatada + " e o perímetro é " + volumeFormatado;
     }
 
 

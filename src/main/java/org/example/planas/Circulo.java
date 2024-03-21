@@ -17,7 +17,9 @@ public class Circulo {
     }
 
     public String RetornaStringCirculo(){
-        return "A área do círculo é " + CirculoArea() + " e o perímetro é " + CirculoPerimetro();
+        String areaFormatada = String.format("%.2f", CirculoArea());
+        String volumeFormatado = String.format("%.2f", CirculoPerimetro());
+        return "A área do círculo é " + areaFormatada + " e o perímetro é " + volumeFormatado;
     }
 
 

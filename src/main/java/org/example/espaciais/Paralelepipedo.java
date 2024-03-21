@@ -21,7 +21,9 @@ public class Paralelepipedo {
     }
 
     public String RetornaStringParalelepipedo(){
-        return "O volume do paralelepípedo é " + ParalelepipedoVolume() + " e a área superficial é " + ParalelepipedoArea();
+        String areaFormatada = String.format("%.2f", ParalelepipedoArea());
+        String volumeFormatado = String.format("%.2f", ParalelepipedoVolume());
+        return "A área do paralelepípedo é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
 
 

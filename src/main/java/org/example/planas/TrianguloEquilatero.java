@@ -17,7 +17,9 @@ public class TrianguloEquilatero {
     }
 
     public String RetornaStringTriEquilatero(){
-        return "A área do triângulo equilátero é " + TriEquilateroArea() + " e a do perímetro é " + TriEquilateroPerimetro();
+        String areaFormatada = String.format("%.2f", TriEquilateroArea());
+        String volumeFormatado = String.format("%.2f", TriEquilateroPerimetro());
+        return "A área do triângulo equilátero é " + areaFormatada + " e o perímetro é " + volumeFormatado;
     }
 
 

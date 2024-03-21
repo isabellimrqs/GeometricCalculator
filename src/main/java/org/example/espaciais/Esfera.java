@@ -16,7 +16,9 @@ public class Esfera {
     }
 
     public String RetornaStringEsfera(){
-        return "A área superficial da esfera é " + EsferaArea() + " e o volume é " + EsferaVolume();
+        String areaFormatada = String.format("%.2f", EsferaArea());
+        String volumeFormatado = String.format("%.2f", EsferaVolume());
+        return "A área da esfera é " + areaFormatada + " e o volume é " + volumeFormatado;
     }
 
 }
